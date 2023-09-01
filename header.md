@@ -31,3 +31,5 @@ Usage:
 ```
 create_docs.ps1
 ```
+> **NOTE**: The create_docs.ps1 script will replace this readme with the module documentation. If you want to keep this readme, rename it to something else before running the script.
+> **NOTE**: Some config resides within the TF files created, this can be replaced with your own config, it is there as an example.
