@@ -2,7 +2,7 @@
 
 ## Structure
 
-This module template was built to standardise and simplify the creation of new modules. It is intended to be used as a starting point for new modules, and to provide a consistent structure for all modules.
+This template was built to standardise and simplify the creation of new projects. It is intended to be used as a starting point for new projects, and to provide a consistent structure for all projects.
 
 - modules directory for all submodules
 - examples directory for all examples
@@ -32,4 +32,5 @@ Usage:
 create_docs.ps1
 ```
 > **NOTE**: The create_docs.ps1 script will replace this readme with the module documentation. If you want to keep this readme, rename it to something else before running the script.
+
 > **NOTE**: Some config resides within the TF files created, this can be replaced with your own config, it is there as an example.
