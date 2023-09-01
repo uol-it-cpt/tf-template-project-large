@@ -1,20 +1,35 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Default Template Readme
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Structure
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+This module template was built to standardise and simplify the creation of new modules. It is intended to be used as a starting point for new modules, and to provide a consistent structure for all modules.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- modules directory for all submodules
+- examples directory for all examples
+- .tf files created
+  - main.tf = main module file
+  - variables.tf = module variables
+  - outputs.tf = module outputs
+  - README.md = module documentation
+- _docs directory contains module documentation template files
+- header.md = readme headers used in the create_docs.ps1 script
+- create_docs.ps1 = powershell script to create the module documentation
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+When you run the create_docs.ps1 script, it will create the module documentation in the root of each module and example directory. It will replace this current readme with the module documentation.
+
+## Documentation 
+
+The documentation script requires the following:
+
+- All variables contain descriptions detailing their use
+- All outputs contain descriptions detailing their use
+- Each root folder for a module, submodule or example you want to document must contain a header.md file
+- Examples contain a main.tf file with a working example of the module
+
+Usage:
+
+```
+create_docs.ps1
+```
+> **NOTE**: The create_docs.ps1 script will replace this readme with the module documentation. If you want to keep this readme, rename it to something else before running the script.
+> **NOTE**: Some config resides within the TF files created, this can be replaced with your own config, it is there as an example.
